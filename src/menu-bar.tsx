@@ -258,7 +258,7 @@ export default function Command() {
   // menu bars; tinting the alpha channel gives a clean silhouette of the
   // sing-box logo that adapts to the system text color.
   const menuIcon: Image.ImageLike = {
-    source: "menubar-icon.png",
+    source: "box.png",
     tintColor: isRunning ? Color.PrimaryText : Color.SecondaryText,
   };
 
