@@ -255,8 +255,8 @@ export default function Command() {
   const daemonInstalled = data?.daemonInstalled ?? true;
 
   const menuIcon: Image.ImageLike = isRunning
-    ? "sing-box.png"
-    : { source: "sing-box.png", tintColor: Color.SecondaryText };
+    ? "menubar-icon.png"
+    : { source: "menubar-icon.png", tintColor: Color.SecondaryText };
 
   const dotIcon: Image.ImageLike = {
     source: Icon.CircleFilled,
