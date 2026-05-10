@@ -254,9 +254,13 @@ export default function Command() {
   const binaryFound = data?.binaryFound ?? true;
   const daemonInstalled = data?.daemonInstalled ?? true;
 
-  const menuIcon: Image.ImageLike = isRunning
-    ? "menubar-icon.png"
-    : { source: "menubar-icon.png", tintColor: Color.SecondaryText };
+  // Menu bar icons must be monochrome to render legibly across light/dark
+  // menu bars; tinting the alpha channel gives a clean silhouette of the
+  // sing-box logo that adapts to the system text color.
+  const menuIcon: Image.ImageLike = {
+    source: "menubar-icon.png",
+    tintColor: isRunning ? Color.PrimaryText : Color.SecondaryText,
+  };
 
   const dotIcon: Image.ImageLike = {
     source: Icon.CircleFilled,
