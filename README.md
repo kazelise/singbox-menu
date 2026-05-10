@@ -49,7 +49,8 @@ All `sudo -n` calls are covered by the SingBoxMenu sudoers entry; if that file i
 
 ## Credits
 
-- Icon: [Sing-box.svg](https://commons.wikimedia.org/wiki/File:Sing-box.svg) on Wikimedia Commons.
+- Menu bar icon: extracted from [sing-box-for-apple](https://github.com/SagerNet/sing-box-for-apple)'s `MacLibrary/Assets.xcassets/MenuIcon.symbolset/menu_icon.svg` (Regular weight, Large scale). Rendered to PNG with `rsvg-convert`.
+- Extension store icon: [docs/assets/icon.svg](https://github.com/SagerNet/sing-box/blob/testing/docs/assets/icon.svg) from the upstream sing-box repo (also mirrored at [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sing-box.svg)).
 - Daemon scaffolding: [SingBoxMenu](https://github.com/kazelise/SingBoxMenu).
 
 ## License
